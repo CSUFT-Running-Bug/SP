@@ -63,8 +63,15 @@ async function getOneGoodsCommentsSpiderTask(page,url) {
     `https://club.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98&productId=${productId}&score=0&sortType=5&page=${page}&pageSize=10&isShadowSku=0&fold=1`,
     {
       headers: {
-        "user-agent": "Mozilla/5.0",
-        Referer: "https://item.jd.com/" + productId + ".html",
+        // ":authority": "club.jd.com",
+        // ":method": "GET",
+        // ":path": "/comment/productPageComments.action?callback=fetchJSON_comment98&productId=25175059796&score=0&sortType=5&page=0&pageSize=10&isShadowSku=0&fold=1",
+        // ":scheme": "https",
+        // "cookie": "ip_cityCode=2802",
+        // "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"',
+        // "sec-ch-ua-platform": "Windows",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+        // Referer: "https://item.jd.com/" + productId + ".html",
       },
       responseType: "arraybuffer",
     }
