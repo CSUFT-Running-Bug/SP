@@ -8,6 +8,7 @@ module.exports = {
   "maxPageSize": 10 // 某个商品要爬取的评论页数，一页的评论数量固定为10个，注意有的商品可能评论没那么多页
 }
 ```
+爬取的数据存在同级文件goods.txt中
 # 运行
 ```
 npm i
@@ -20,4 +21,4 @@ node index
 2. 换ip，换ip可以使用ip池或者本地代理切换
 3. 保存好数据，存入mongo中，系统使用离线数据
 
-# for Qi
+# for Qi 🤗
